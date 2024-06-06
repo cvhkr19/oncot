@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fontSize: 0.9em;
+    --fontWeight: 500;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav {
+    height: 70px;
+    width: 100%;
+    background-color: #F47C7C;
+}
+
+.container {
+    height: calc(100% - 70px);
+    width: 100%;
+    display: flex;
+}
+
+.main {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 80%;
+    background-color: #EF9F9F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.history {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 20%;
+    background-color: rgba(249, 0, 187, 0.213);
+}
+
+.history_close {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 0%;
+}
+
+.main_full {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+}
+
+.ans {
+    width: 80%;
+    background-color: #fff2f22c;
+    height: calc(80% - 30px);
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+.question {
+    width: 80%;
+    height: 50px;
+    bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #fff2f22c;
+    padding: 7px;
+    display: flex;
+    resize: vertical;
+    text-align: left;
+    align-items: center;
+    gap: 2px;
+    padding-right: 80px;
+    padding-left: 20px;
+    scrollbar-width: none;
+    resize: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight);
+    font-style: normal;
+}
+
+textarea:focus {
+    outline: 0;
+    border: burlywood;
+    box-shadow: 0 0 3px 2px burlywood inset;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #FAD4D4;
+}
+
+button:hover {
+    background-color: #f7c0c0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-left: 20px;
+    font-family: "Montez", cursive;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.icon {
+    width: 100%;
+    height: 70px;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.image:hover {
+    background-color: rgba(255, 192, 203, 0.796);
+    box-shadow: 0px 0px 10px 0px pink;
+}
+
+.user_in {
+    background-color: rgba(255, 255, 255, 0.040);
+    width: calc(100%-30px);
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight);
+}
+
+.bot-message {
+    /* background-color: rgba(252, 124, 146, 0.776); */
+    width: calc(100%-30px);
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight);
+    font-style: normal;
+    
+}
+
+.ans::-webkit-scrollbar {
+    display: none;
+}
+
+.user_profile {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.user_profile img {
+    width: 25px;
+    height: 25px;
+}
