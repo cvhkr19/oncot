@@ -9,7 +9,7 @@ const sendMessage = () => {
   chatBox.innerHTML += `<div class = "user_in"><div class = "user_profile"><img src = "abstract-user-flat-1.svg"></img>&nbsp;You</div>${userInput}</div>`
   chatBox.scrollTop = chatBox.scrollHeight;
   document.querySelector("#input").value = "";
-  fetch('/api', {
+  fetch('/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

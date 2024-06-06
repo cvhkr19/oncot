@@ -22,7 +22,7 @@ const generateResponse = async (userMessage) => {
     return text;
 }
 
-app.post('/api', async (req, res, next) => {
+app.post('/', async (req, res, next) => {
     const userMessage = req.body.message;
     const botResponse = await generateResponse(userMessage);
     console.log(botResponse);
